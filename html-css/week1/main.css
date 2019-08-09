@@ -1,0 +1,162 @@
+
+/* Defining fontsize and family */
+body{
+  font-family : Garamond, Verdana;
+  font-size : 16px;
+  margin : 0;
+}
+
+/* removing the bullet from list */
+ul{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Defining the navigation bar for menu*/
+.navigationbar {
+  overflow :hidden;
+  background-color : darkblue;
+}
+
+/* setting up the menu for navigation */
+.navigationbar a {
+  float : left;
+  font-size : 16px;
+  color : cyan;
+  text-align : center;
+  padding-top: 16px;
+  padding-bottom:14px;
+  padding-left:16px;
+  padding-right:16px;
+  text-decoration:none;
+  margin:0;
+}
+
+/* Defining hover color on menu item */
+.navigationbar a:hover {
+  background-color: purple;
+}
+
+/* Defining the footer */
+footer{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/* Defining main content and creating three columns as a grid */
+.mainContent {
+  display:grid;
+  grid-template-columns:.2fr 1fr 1fr;
+  grid-gap:10px;
+  padding:15px;
+  height:200px;
+}
+
+/* Defining the aboutme content font */
+.aboutMeContent {
+  padding-left:15px;
+  font-size : 20px;
+}
+/*Defining the ::first-letter pseudo-element*/
+p::first-letter {
+  color:blueviolet;
+  font-variant: small-caps;
+}
+
+/*Defining the ::first-line pseudo-element*/
+h3::first-line {
+  color: #666600;
+}
+
+/* Setting up the font for h1 */
+.basicInfoContent {
+  padding-left:15px;
+  font-size : 20px;
+}
+
+/* Defining the contact content font */
+.labelValue {
+  display:flex;
+  font-size:22px;
+  font-style:italic;
+}
+
+/* Defining experience content to take placeholder */
+.experienceContent{
+  height:150px;
+  padding-left:80px;
+}
+
+/* Defining education details content */
+.educationContent {
+  display:grid;
+  height:100px;
+  padding-left:80px;
+}
+
+/* Defining learning strategy content */
+.learningStrategyContent {
+  display:grid;
+  height:150px;
+  padding-left:80px;
+}
+
+/* Defining hyf content */
+.hyfContent {
+  display:grid;
+  height:100px;
+  padding-left:80px;
+}
+
+/* Third party usage for social icon */
+.fa {
+  padding: 2px;
+  font-size: 20px;
+  width:20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+/* hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Third party facebook icon */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Third party instagram icon */
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+
+/* Third party twitter icon */
+.fa-twitter {
+  background: #3B5998;
+  color: white;
+}
+
+/* Third party linkedin icon */
+.fa-linkedin{
+  background: #3B5998;
+  color: white;
+}
+
+
+/* Defining aboutme box */
+.aboutme-box {
+    background:#F7F4F7;
+    box-sizing:content-box;
+		padding: 90px 100px;
+}
+
+
+
+
