@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Form Exercise week3 homework</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="navigation">Navigation</div>
+    </header>
+
+    <div>
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around
+            you!</p>
+        <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy
+            picking the best offers that match your preferences and style. Every week we will send you a
+            hand-picked selection - we just need to know a few details about your first…</p>
+    </div>
+
+    <h2>Step 1/4 - tell us who you are?</h2>
+
+    <p><strong>Progress</strong></p>
+
+    <div class="w3-light-grey w3-round">
+        <div class="w3-grey w3-round" style="height:24px;width:25%"></div>
+    </div>
+
+    <form id="regForm" action="" >
+
+        <p>Nice to meet you. Let’s spend a minute to get to know each other? Please enter the following:</p>
+
+        <div class="input-container">
+            <label>First name*</label>
+            <input class="input-field" required type="text" name="firstname" value="" placeholder="First Name">
+            <label>Last name* </label>
+            <input class="input-field" required type="text" name="lastname" value="" placeholder="Last Name">
+        </div>
+
+        <div class="input-container">
+            <div class="custom-select">
+                <label class="select-label">Country* </label>
+                <select  required>
+                    <option value="">-- Please choose a country --</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="DENMARK">DENMARK</option>
+                    <option value="US">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="input-container">
+            <label>Street address*</label>
+            <input class="input-field" type="text" required name="streetadress" value="" placeholder="Street Address">
+            <label>Post Code* </label>
+            <input class="input-field" type="text" name="postcode" required maxlength="4" pattern="\d{4}" value="" placeholder="Post Code">
+        </div>
+
+        <br>
+        <div class="input-container">
+            <div class="align-content">
+                <label>Profile Description*</label>
+                <h4>Please provide a short description of yourself to be displayed on your social community pages
+                </h4>
+            </div>
+            <textarea row="8" cols="210" maxlength="500"></textarea>
+        </div>
+        <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address</p>
+        <label>Shipping Address</label>
+        <input type="checkbox" id="toggle" checked>
+
+        <br>
+
+        <div id="hide_if_no">
+
+            <div class="input-container">
+                <label>First name* </label>
+                <input class="input-field" type="text" name="firstname" value=""  placeholder="First Name">
+                <label>Last name* </label>
+                <input class="input-field" type="text" name="lastname" value=""  placeholder="Last Name">
+            </div>
+
+            <div class="custom-select">
+                <label class="select-label">Country* </label>
+
+                <select>
+                    <option value="">-- Please choose a country --</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="DENMARK">DENMARK</option>
+                    <option value="US">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="input-container">
+                <label>Street address*</label>
+                <input class="input-field" type="text" name="streetadress" value=""  placeholder="Street Address">
+                <label>Post Code* </label>
+                <input class="input-field" type="text" name="postcode" maxlength="4" pattern="\d{4}" value=""  placeholder="Post Code">
+            </div>
+
+            <br>
+        </div>
+        <div class="next-page">
+            <button type="submit" formaction="/secondPage.html" class="next">Next Step &raquo;</button>
+        </div>
+    </form>
+</body>
+
+</html>
