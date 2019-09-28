@@ -162,4 +162,4 @@ console.log(getReply('Set a timer for 1 minutes'));                     // Timer
 
 console.log(getReply('Add Bike ride on 03.11.2019 to my calendar'));    // Bike ride added to your calender
 
-//console.log(getReply('What am I doing this week'));                      //This week you have 1 event
+console.log(getReply('What am I doing this week'));                      //This week you have 1 event
