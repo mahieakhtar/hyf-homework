@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    background-color: lightseagreen;;
+}
+
+h1{
+    color: black;
+    font-style: 'Pacifico', cursive;
+    font-size: 80px;
+    width:100%;
+}
+
+    button{
+        background-color:rgb(114, 223, 114);
+        border-color: orange;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;    
+        text-align:center;
+        margin:20px auto;
+        
+    }
+    #input-word{
+        height: 60px;
+        border:orange;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 30px;
+        width: 350px;
+    }
+    #input-number{
+        height: 60px;
+        border:orange;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 30px;
+        width: 200px;
+    }
+    

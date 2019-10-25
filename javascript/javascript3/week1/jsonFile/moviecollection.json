@@ -1,0 +1,23 @@
+    {
+        "movieCollection": [
+            {
+                "movieType": "ActionMovie",
+                "movieName": "Brave heart",
+                "movieDetails": {
+                    "releaseDate": 1995,
+                    "starring": "Mel Gibon"
+                }
+            },
+            {
+                "movieType": "Romantic Movie",
+                "movieName": "Titanic",
+                "movieDetails": {
+                    "releaseDate": 1997,
+                    "starring": [
+                        "Leonardo Wilhelm DiCaprio",
+                        "Kate Elizabeth Winslet"
+                    ]
+                }
+            }
+        ]
+    }

@@ -1,0 +1,10 @@
+body{
+    
+    color:black;
+    background-color:grey;
+}
+#btn{
+    background-color: green;
+    color:white;
+    padding:10px;
+}
