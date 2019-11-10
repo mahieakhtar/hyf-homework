@@ -8,12 +8,12 @@ setTimeout(() => {
 //2.Create a function that takes 2 parameters: delay and stringToLog. Calling this function should log out the stringToLog after delay seconds.
 //Call the function you have created with some different arguments.
 
-function callBack(delay, stringToLog) {
+function delayedLogOut(delay, stringToLog) {
     setTimeout(() => {
         console.log('Called after 5 seconds')
     }, delay * 1000);
 }
-callBack(5, 'this string logged after 5 seconds');
+delayedLogOut(5, 'this string logged after 5 seconds');
 
 //3.Create a button in html. When clicking this button, use the function you created in the previous task to log out the text: Called after 5 seconds 5 seconds after the button is clicked.
 
@@ -54,7 +54,17 @@ button1.addEventListener('click', getLocation => {
         alert("Longitude is : " + position.coords.longitude);
     }
 });
+/*6. Optional Now show that location on a map using fx the Google maps api
 
+function renderLocationOnGoogleMap(lat, lng) {
+    const mapDiv = document.querySelector('#map');
+    const map = new google.maps.Map(mapDiv, {
+        center: { lat, lng },
+        zoom: 12
+    });
+
+    console.log(map);
+}*/
 //7.Create a function called runAfterDelay. It has two parameters: delay and callback. 
 //When called the function should wait delay seconds and then call the provided callback function.
 //Try and call this function with different delays and different callback functions
