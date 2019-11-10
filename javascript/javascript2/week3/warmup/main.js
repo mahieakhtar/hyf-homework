@@ -98,10 +98,10 @@ const badJoke = logBadJoke => {
     console.log('Why don’t crabs donate? Because they’re shellfish.');
 };
 function jokeCreater(shouldTellFunnyJoke, logFunnyJoke, logBadJoke) {
-    if (shouldTellFunnyJoke === true) {
-        funnyJoke();
+    if (shouldTellFunnyJoke) {
+        logFunnyJoke();
     } else {
-        badJoke();
+        logBadJoke();
     }
 };
 jokeCreater(true, funnyJoke, badJoke);
