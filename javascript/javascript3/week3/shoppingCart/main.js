@@ -1,5 +1,6 @@
 //Shopping cart using Classes
 const ul = document.getElementById('listUl');
+
 class Product {
     constructor(name, price, currentCurrency) {
         this.name = name;
@@ -7,17 +8,7 @@ class Product {
         this.currentCurrency = currentCurrency;
     }
 
-    convertCurrency(currency) {
-        const apiKey = "wxzCFMWmRKAmUnsT3gwn8Xzx6UKk3d";
-        fetch(`https://www.amdoren.com/api/currency.php?api_key=${apiKey}&from=${this.currentCurrency}&to=${currency}&amount=${this.price}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                const li = document.createElement('li');
-                li.textContent = `Price in ${currency} = ${data.amount}`
-                ul.appendChild(li);
-            });
-    }
+
 }
 
 class ShoppingCart {
@@ -61,6 +52,18 @@ class ShoppingCart {
     }
 }
 
+function fetchConvertedCurrencyAndManipulateDOM(fromCurrency, toCurrency, amount) {
+    const apiKey = "wxzCFMWmRKAmUnsT3gwn8Xzx6UKk3d";
+    fetch(`https://www.amdoren.com/api/currency.php?api_key=${apiKey}&from=${fromCurrency}&to=${toCurrency}&amount=${amount}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const li = document.createElement('li');
+            li.textContent = `Price in ${currency} = ${data.amount}`
+            ul.appendChild(li);
+        });
+}
+
 const flatscreen = new Product('flat-screen', 5000);
 const mac = new Product("macbook", 8000);
 const iphone = new Product("iphone11", 9000);
@@ -77,5 +80,5 @@ shoppingCart.renderProducts();
 shoppingCart.getUser();
 
 const prodWithCurrency = new Product("prodWithCurrency", 100, "DKK");
-console.log(prodWithCurrency.convertCurrency('EURO'));
+console.log(fetchConvertedCurrencyAndManipulateDOM(prodWithCurrency.currentCurrency, 'EURO', prodWithCurrency.price));
 
