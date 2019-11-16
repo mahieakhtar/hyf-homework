@@ -23,8 +23,15 @@ let getRandomColor = () => {
     }
     return color;
 }
+const x = () => {
+    return Math.floor(Math.random() * 1250);
+}
+const y = () => {
+    return Math.floor(Math.random() * 1000);
+}
 
 setInterval(() => {
-    let c = new Circle(Math.floor(Math.random() * 1250), Math.floor(Math.random() * 1000), Math.floor(2 * Math.PI), getRandomColor());
+    let c = new Circle(x(), y(), 2 * Math.PI, getRandomColor());
     c.draw();
-}, 20) 
+}, 20)
+
