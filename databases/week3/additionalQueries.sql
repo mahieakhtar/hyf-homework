@@ -36,7 +36,7 @@ SELECT * FROM meal WHERE created_date BETWEEN '2019-11-20' AND '2019-11-26';
 -- Get only specific number of meals fx return only 5 meals
 SELECT * FROM meal limit 5;
 -- Get the meals that have good reviews
-SELECT * FROM meal JOIN review ON meal.id = review.meal_id WHERE review.stars = 'good' OR review.stars = 'very good';
+SELECT * FROM meal JOIN review ON meal.id = review.meal_id WHERE review.stars > 3;
 -- Get reservations for a specific meal sorted by created_date
 SELECT * FROM meal JOIN reservation ON meal.id = reservation.meal_id WHERE reservation.created_date;
 -- Sort all meals by average number of stars in the reviews
