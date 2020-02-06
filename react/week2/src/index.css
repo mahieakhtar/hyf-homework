@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding:0;
+  font-family: sans-serif; 
+  background-color: lightblue;
+}
+
+code {
+  font-family: monospace; 
+}
+
+button {
+  margin-left: 15px;
+  color: red;
+}
+
+ul li {
+  margin-top: 15px;
+  
+}
+.watchcount{
+  color: blue;
+}
+
+
