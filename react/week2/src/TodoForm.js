@@ -2,17 +2,21 @@
 import React from "react";
 
 const TodoForm = (props) => {
-
-  const { description, done } = props.tasks;
-
+  
   return (
 
-    <li style = {{ textDecoration: done ? "line-through" : "" }} >
-      {description} 
-      { <input type="checkbox" onClick={props.completed} /> }
+    <li style = {{ textDecoration: props.tasks.done ? "line-through" : "" }}>
+    
+       {props.tasks.description} 
+      
+       <input type="checkbox" name={props.tasks.description} checked={props.tasks.done} onChange={props.handleInputChange}  /> 
+      
       < button onClick={props.delete} > Delete </button>
+      
     </li>
   );
 }
+
 export default TodoForm; 
+
 
