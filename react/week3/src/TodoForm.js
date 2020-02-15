@@ -6,14 +6,15 @@ const TodoForm = (props) => {
   const handleClick = () => setChecked(!checked)
 
   return (
-    <li style = {{ textDecoration: checked ? "line-through" : "" , border : "1px solid black", padding:"5px", width:"500px"}}>
-       {props.todos.isEditing ? 
-       <span> <input value={props.todos.description} type="text" onChange={props.handleInputChange}/></span> :
+      <li className= {`${checked ? "checked" : ""}`}>
+       {props.todos.isEditing ?
+       <span> <input value={props.todos.description} type="text" onChange={props.handleInputChange}/></span>:
         <span>
         {props.todos.description}
         </span>
         }&nbsp;&nbsp; | &nbsp;&nbsp;
        {props.todos.deadline} &nbsp;&nbsp;
+
        <input type="checkbox" name={props.todos.description} checked={checked} onChange={handleClick}  /> 
       < button onClick={props.delete} > Delete </button>
       {props.todos.isEditing ? <button onClick={props.update}>Update</button> : <button onClick={props.edit}>Edit</button>}

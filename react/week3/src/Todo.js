@@ -5,7 +5,7 @@ const Todo = (props) => {
  
   return (
     
-    <form id="myForm" onSubmit ={props.onSubmit} style={{ paddingLeft: 40, marginTop: 16 }}>
+    <form id="myForm" onSubmit ={props.onSubmit} >
       <label>Todo Description:</label>
       <input type="text"  name="description"  placeholder="Add task here!" /> <br /><br />
       <label>Deadline:</label>

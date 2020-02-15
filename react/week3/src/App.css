@@ -61,3 +61,17 @@ ul{
 .listingtodo{
   color:green;
 }
+
+#myForm{
+  padding-left: 40;
+   margin-left: 16;
+}
+.checked{
+  text-decoration: line-through;
+}
+li{
+  
+  border : 1px solid black;
+ padding:5px;
+ width:500px;
+}
