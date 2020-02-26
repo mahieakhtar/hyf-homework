@@ -15,7 +15,7 @@ route.get("/meals", (req, res) => {
 //Respond with the json for the meal with the corresponding id
 route.get("/:id", (req, res) => {
 	const { id } = req.params;
-	const mealsId = meals.filter(meal => {
+	const mealsId = meals.find(meal => {
 		return meal.id === parseInt(id);
 	});
 	res.send(mealsId);
