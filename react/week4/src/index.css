@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  
+    text-align: center;
+    min-width: 100vh;
+    text-decoration-color: rgb(233, 233, 190);
+   background-color: lightgrey;
+    
+}
+.App-header{
+  text-decoration: lightblue;
+}
+
+.search-form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+
+.search-bar{
+  width:30%;
+  display: flex;
+  justify-content: wrap;
+  padding:10px;
+  color:black ;
+  background :gray;
+  text-align: center;
+  border:none;
+
+}
+
+.Github-user-details{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction:column;
+  margin:20px;
+  align-items: center;
+  min-width: 40%;
+}
+.user{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin:20px;
+  align-items: center;
+  min-width: 40%;
+}
+
+
+
