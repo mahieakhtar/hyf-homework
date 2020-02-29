@@ -1,0 +1,15 @@
+.header {
+   border: 1px solid black;
+   padding:1px;
+   width:20%;
+}
+.employee-list{
+    color:blue;
+    border: dotted #000;
+    text-align: center;
+    
+}
+
+input {
+    width: 200px;
+}
