@@ -1,5 +1,5 @@
 carrot
 potato
-tomato
+small tomato
 turnip
 peas
