@@ -8,7 +8,7 @@ export const UserContext = createContext();
     const [users, setUsers] = useState([]);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
-   const [query, setQuery] = useState();
+   const [query, setQuery] = useState('');
     
     useEffect(() => {
         async function fetchData() {
