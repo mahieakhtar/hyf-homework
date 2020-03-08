@@ -1,4 +1,4 @@
-import React,{useState,useEffect,createContext} from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import SearchForm from './SearchForm';
 import UserList from "./UserList";
 
@@ -20,10 +20,10 @@ export const UserContext = createContext();
                 console.log(data);
                 setUsers(data.items);
                 console.log(data.items);
-                setIsLoading(false);
             } catch (error) {
                 setError(error);
-                }
+                }finally{
+                setIsLoading(false)}
             };
             fetchData();
     }, [query]);
