@@ -12,7 +12,7 @@ export default function UserList(){
             {
                 isLoading ? <h1 >...loading</h1> :
                 <div>
-                {users!=null && users.length > 0 && users.map(user => 
+                {users && users.length > 0 && users.map(user => 
                     ( 
                     <User key = {user.id}
                         user = {user.login} 
