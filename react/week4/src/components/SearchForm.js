@@ -16,7 +16,7 @@ const UpdateUser=(e) =>{
         <form className = 'search-form'>
             <input className = 'search-bar'
             type ='text' 
-            value={query || ''}
+            value={query}
             onChange={UpdateUser}
             placeholder='Search for user'/>
         </form>
